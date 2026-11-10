@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cap 15 - aula 3/4</title>
+    <link rel="stylesheet" href="cap13-aula7.css" />
+  </head>
+  <body>
+    <main>
+      <!--TAG MAIN, UMA ESPECIE DE DIV ESPECIAL, QUE DIZ QUE É ONDE ESTÁ O CONTEUDO PRINCIPAL   -->
+      <h1>Capítulo 15 Aula 03/04</h1>
+
+      <h2>3 - Pseudo-classes em CSS</h2>
+      <p>
+        <b
+          ><mark
+            >div(.div) = Ela é um elemento de divisão/agrupamento de conteúdo,
+            normalmente usado como contêiner.</mark
+          ></b
+        >
+      </p>
+      <p>
+        <b
+          ><mark
+            >:hover(:) = pseudo classes sao palavras que definem estados de elementos dentro do HTML.</mark
+          ></b
+        >
+      </p>
+      <p>
+        Usando a tag <b>&lt;link&gt; rel="stylesheet" href="style.css"</b> para
+        acessar os estilos externos:
+      </p>
+      <p class="center">
+        <b><u>HTML5:</u></b> <b>&lt;div id="EXEMPLO-01"&gt;</b> EXEMPLO-01
+        <b>&lt;/div&gt;</b>
+      </p>
+      <button class="exemplo1">EXEMPLO-01</button>
+      <p class="center">
+        <b><u>CSS3:</u> Pseudo-classes em CSS</b>
+      </p>
+      <p>
+        <b><u>@charset "UTF-8"</u></b>
+      </p>
+
+      <b>div {</b>
+      <p><b>display:</b> block; (DEIXA UM DO LADO DO OUTRO)</p>
+      <p><b>border:</b> 1px solid black;</p>
+      <p><b>background-color:</b> green;</p>
+      <p><b>text-align:</b> center;</p>
+      <p><b>height:</b> 200px; (*ALTURA*)</p>
+      <p><b>width:</b> 200px; (*LARGURA*)</p>
+      <b>}</b><br /><br />
+      <b>#EXEMPLO-01 {</b>
+      <p><b>background-color:</b> blue; (ID NORMAL)</p>
+      <b>}</b><br /><br />
+      <b>div:hover {</b> - (QUANDO PASSA O MOUSE// div:hover &gt; pseudo class)
+      <p><b>background-color:</b> yellow;</p>
+      <b>}</b><br /><br />
+      <p>
+        <b
+          ><mark
+            >Pseudo-classes(:) = Tem que estar relacionado ao uma classe (class)
+            ou elemento (id), estão relacionadas ao estado de um elemento ou a
+            condições específicas.</mark
+          ></b
+        >
+      </p>
+      <p>
+        <b
+          ><mark
+            >hover(:) = aplicado no exemplo ao elemento "div", é uma
+            pseudo-classe que aplica estilos quando o ponteiro está sobre o
+            elemento, (div:hover &gt; p), o "&gt;" é o combinador de filho
+            direto.</mark
+          ></b
+        >
+      </p>
+
+      <hr />
+
+      <p class="center">
+        <b><u>HTML5:</u></b> <b>&lt;div id="EXEMPLO-01"&gt;</b> EXEMPLO-01
+        <b>&lt;/div&gt;</b>
+      </p>
+      <div class="texto15">
+        EXEMPLO-01- (PASSE O MOUSE AQUI)
+        <p>TEXTO ESCONDIDO</p>
+      </div>
+      <p class="center">
+        <b><u>CSS3:</u> Pseudo-classes em CSS</b>
+      </p>
+      <p>
+        <b><u>@charset "UTF-8"</u></b>
+      </p>
+
+      <b>body {</b>
+      <p><b>font-family:</b> Arial</p>
+      <b>}</b><br /><br />
+      <p>
+        (O PARAGRAFO(p) "TEXTO ESCONDIDO" DENTRO DE UMA DIV(div), paragrafo
+        filho de uma div)
+      </p>
+      <b>div &gt; p {</b>
+      <p><b>display:</b> none; (OCULTAR UM PARAGRAFO)</p>
+      <b>}</b><br /><br />
+      <b>div:hover &gt; p {</b> (O PARAGRAFO APARECE IGUAL UM MENU, texto azul
+      fundo red)
+      <p><b>display:</b> block;</p>
+      <p><b>color:</b> blue;</p>
+      <p><b>background-color:</b> yellow;</p>
+      <b>}</b><br /><br />
+      <b>div:hover {</b> (EXEMPLO-01 = QUANDO PASSA O MOUSE FICA VERMELHO //
+      div:hover &gt; pseudo class)
+      <p><b>color:</b> red;</p>
+      <b>}</b><br /><br />
+      <hr />
+      <p class="center">
+        <b><u>HTML5: </u>Pseudo-classes em CSS</b>
+      </p>
+      <b>
+        &lt;head&gt;
+        <p>&lt;/body&gt;</p>
+      </b>
+      <p><b>&lt;/h1&gt; </b><u>PERSONALIZADOR DE LINKS</u> <b>&lt;/h1&gt;</b></p> <br>
+      <p><b>&lt;/ul&gt;</b></p>
+      <p>
+        <b>&lt;li&gt;</b> <b>&lt;a href="https://github.com.br" target="_blank" </b>
+        &gt; <u class="link">LINK GITHUB</u> &lt; <b> <b>&lt;/a&gt;</b>  <b></b>&lt;/li&gt;</b>
+      </p>
+      <p>
+        <b>&lt;li&gt;</b> <b>&lt;a href="https://youtube.com.br" target="_blank" &gt;</b>
+        <u class="link"> LINK YOUTUBE</u><b> <b>&lt;/a&gt;</b>&lt;/li&gt;</b>
+      </p>
+      <p>
+        <b>&lt;li&gt;</b> <b>&lt;a href="https://cursoemvideo.com.br" target="_blank"</b>
+        &gt;<u class="link"> LINK CURSO EM VIDEO</u> <b> <b>&lt;/a&gt;</b>&lt;/li&gt;</b>
+      </p>
+      <p><b>&lt;/ul&gt;</b></p><br>
+    
+      <p><b>&lt;/body&gt;</b></p>
+      <p><b>&lt;/head&gt;</b></p><br>
+        <hr>
+      <p>
+        Usando a tag <b>&lt;link&gt; rel="stylesheet" href="style.css"</b> para
+        acessar os estilos externos:
+      </p>
+        <p class="center">
+        <b><u>CSS3: </u>Pseudo-classes em CSS</b>
+      </p>
+      <p>
+        <b><u>@charset "UTF-8"</u></b>
+      </p>
+
+      <b>body {</b>
+      <p><b>font-family:</b> Arial</p>
+      <b>}</b><br /><br />
+      <b>a {</b>
+      <p><b>color:</b> red; (cor do link)</p>
+      <p><b>text-decoration</b> none; (tirar sublinhados de links)</p>
+      <p><b>font-weight</b> bold; (negrito)</p>
+      <b>}</b><br /><br />
+      <b>a:visited {</b>
+      <p><b>color:</b> darkred; (quando os sites ja foram visitados)</p>
+      <b>}</b><br /><br />
+      <b>a:hover {</b>
+      <p><b>color:</b> black; (passa o mouse fica preto)</p>
+      <p><b>text-decoration:</b> underlina; (sublinhado quando passa o mouse)</p>
+      <b>}</b><br /><br />
+      <b>a:active {</b>
+      <p><b>color:</b> yellow; (quando clica no link fica amarelo)</p>
+      <b>}</b><br /><br />
+
+      <h2>3 - Pseudo-elementos em CSS</h2>
+      <p>
+        <b
+          ><mark
+            >::after(::) = pseudo elementos sao palavras que podem agir nas classes, nos elementos, nos ids, eles interferem no conteudo periférico do elemento. </mark
+          ></b
+        >
+      </p>
+       <p>
+        Usando a tag <b>&lt;link&gt; rel="stylesheet" href="style.css"</b> para
+        acessar os estilos externos:
+      </p>
+          <p class="center">
+        <b><u>HTML5:</u> Pseudo-elementos em CSS</b> 
+      </p>
+      <b>
+        &lt;head&gt;
+        <p>&lt;/body&gt;</p>
+      </b>
+      <p><b>&lt;/h1&gt; </b><u>PERSONALIZADOR DE LINKS</u> <b>&lt;/h1&gt;</b></p> <br>
+      <p><b>&lt;/ul&gt;</b></p>
+      <p>
+        <b>&lt;li&gt;</b> <b>&lt;a href="https://github.com.br" target="_blank" </b>
+        &gt; <u class="link">LINK GITHUB</u> &lt; <b> <b>&lt;/a&gt;</b>  <b></b>&lt;/li&gt;</b>
+      </p>
+      <p>
+        <b>&lt;li&gt;</b> <b>&lt;a href="https://youtube.com.br" <mark>class="especial"</mark> target="_blank" &gt;</b>
+        <u class="link especial"> LINK YOUTUBE</u><b> <b>&lt;/a&gt;</b>&lt;/li&gt;</b>
+      </p>
+      <p>
+        <b>&lt;li&gt;</b> <b>&lt;a href="https://cursoemvideo.com.br" target="_blank"</b>
+        &gt;<u class="link"> LINK CURSO EM VIDEO</u> <b> <b>&lt;/a&gt;</b>&lt;/li&gt;</b>
+      </p>
+      <p><b>&lt;/ul&gt;</b></p><br>
+    
+      <p><b>&lt;/body&gt;</b></p>
+      <p><b>&lt;/head&gt;</b></p><br>
+
+        <p class="center">
+        <b><u>CSS3:</u> Pseudo-elementos em CSS</b>
+      </p>
+      <p>
+        <b><u>@charset "UTF-8"</u></b>
+      </p>
+
+      <b>body {</b>
+      <p><b>font-family:</b> Arial</p>
+      <b>}</b><br /><br />
+      <b>a {</b>
+      <p><b>color:</b> red; (cor do link)</p>
+      <p><b>text-decoration</b> none; (tirar sublinhados de links)</p>
+      <p><b>font-weight</b> bold; (negrito)</p>
+      <b>}</b><br /><br />
+      <b>a:visited {</b>
+      <p><b>color:</b> darkred; (quando os sites ja foram visitados)</p>
+      <b>}</b><br /><br />
+      <b>a:hover {</b>
+      <p><b>color:</b> black; (passa o mouse fica preto)</p>
+      <p><b>text-decoration:</b> underlina; (sublinhado quando passa o mouse)</p>
+      <b>}</b><br /><br />
+      <b>a:active {</b>
+      <p><b>color:</b> yellow; (quando clica no link fica amarelo)</p>
+      <b>}</b><br /><br />
+      <b>.especial::before {</b>
+      <p><b>content:</b> '[link]'; (depois de todos os links) (content = conteudo)</p>
+      <p><b>text-decoration:</b> none;</p>
+      <p><b>font-weight:</b> normal;</p>
+      <p><b>color:</b> blue;</p>
+      <b>}</b><br /><br />
+      <b>.especial::after {</b>
+      <p><b>content:</b> '[link]'; (depois de todos os links) (content = conteudo)</p>
+      <p><b>text-decoration:</b> none;</p>
+      <p><b>font-weight:</b> normal;</p>
+      <p><b>color:</b> blue;</p>
+      <b>}</b><br /><br />
+      <b>.especial{
+        background-color: green;
+      } {</b>
+      <p><b>color:</b> yellow; (quando clica no link fica amarelo)</p>
+      <b>}</b><br /><br />
+      <button class="caixa3" >
+          <p>HTML5 = <mark><b>Id = #</b></mark> = CSS3</p>
+          <p>HTML5 = <mark><b>class = .</b></mark> = CSS3</p>
+          <p>HTML5 = <mark><b>pseudo-class = :</b></mark> = CSS3</p>
+          <p>HTML5 = <mark><b>pseudo-element = ::</b></mark> = CSS3</p>
+          <p>HTML5 = <mark><b>children = &gt; </b></mark> = CSS3</p>
+      </button>
+      
+
+      <hr />
+      </main>
+      <a class="botao" href="cap16-aula1-2.html">Próxima Aula</a>
+      <a class="botao" href="cap15-aula1-2.html">Aula Anterior</a>
+  </body>
+</html>

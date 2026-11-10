@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.bob {  
+        width: 200px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.press-start-2p-regular {
+    font-family: 'Press Start 2P', system-ui; 
+}
+.botao {
+    display: inline-block; /* Faz o link se comportar como um bloco/botão */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animação suave */
+}
+/* Efeito quando o mouse passa por cima da imagem */
+.botao:hover {
+    transform: scale(1.05); /* Aumenta levemente o botão (efeito zoom) */
+    opacity: 0.9;           /* Dá um leve brilho/transparência */
+    border: black;
+}
+.botao
+    img {
+    max-width: 150px;      /* Largura máxima do botão */
+    height: auto;          /* Mantém a proporção da imagem */
+    display: block;        /* Remove espaçamentos indesejados embaixo da imagem */
+    border-radius: 8px;    /* Opcional: arredonda as bordas da imagem */
+    border: rgb(2, 2, 2);
+    cursor: pointer;
+}
+
+.singles, a{
+    text-align: center;
+}
+
+.videos {
+  display: flex;
+  gap: 16px;
+}
+
+.videos iframe {
+  flex: 1;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border: none;
+}
+
+ul {
+    display: inline-block; /* Faz a lista se comportar como um bloco ajustável */
+    text-align: left;      /* Deixa os itens alinhados à esquerda */
+    padding-left: 0;       /* Retira o espaço padrão da esquerda */
+}
+
+
+.txt {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: cursive;
+    font-size: 20px;
+    text-align: justify;
+    padding: 50px;
+}
+
+head {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+html, body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    /* O gradiente com rgba cria a camada de cor por cima da imagem */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.63), rgb(0, 0, 0)), 
+        url(bob/15634838-bandeira-rastafari-com-o-leao-de-juda-fundo-reggae-vetor.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Opcional: fixa o fundo ao rolar a página */
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Press Start 2P' ;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    font-size: 60px;
+    background-color: brown;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Press Start 2P' ;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Press Start 2P' ;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    font-size: 30px;
+
+}
+
+mark,p,div {
+    font-family:cursive;
+    text-align: center;
+    color: rgb(250, 250, 250);
+    margin-bottom: 50px;
+    font-size: 20px;
+
+}

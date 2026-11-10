@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cap 14 - aula 7/8</title>
+    <link rel="stylesheet" href="cap13-aula7.css" />
+  </head>
+  <body>
+    <main>
+      <!--TAG MAIN, UMA ESPECIE DE DIV ESPECIAL, QUE DIZ QUE É ONDE ESTÁ O CONTEUDO PRINCIPAL   -->
+                                      <h1>Capítulo 14 Aula 07/08</h1>
+
+      <h2>7 - Usando fontes externas baixadas</h2>
+    <p>Entrar no site de baixar font, baixar os arquivos <b>LOVE.OTF</b> / <b>LOVE.TTF</b>, copia os dois arquivos e joga dentro da pastas com o arquivo html, uso do tipo de arquivo depende do navegador, usar os 2 melhor método.</p>
+    <p><u>Tipos de Format:</u> <b>opentype(.otf), truetype(.ttf), embedded-opentype, truetype-aat (apple advanced typografy), svg</b>.   </p>
+<p><b>&lt;style&gt;</b> <br></p>
+  <p><b><i>@font-face</i> {</b></p>
+      <ul><b>font-family:</b> 'Love';</ul>
+      <ul><b>src: url</b>('fonts/love larry.otf') <b>format</b>('opentype'), <b>url</b>('fonts/love larry.ttf') <b>format</b>('truetype');</ul>
+      <ul><b>font-weight:</b> normal;</ul>
+      <ul><b>font-style:</b> normal;</ul>
+    <b>}</b><br><br>
+    <b>h1 {</b>
+      <ul><b>font-family:</b> 'Love', times, serif;</ul>
+      <ul><b>font-size:</b> 3em;</ul>
+      <ul><b>font-weihht:</b> normal;</ul>
+    <b>}</b><br><br>
+    <b>&lt;/style&gt;</b>
+<hr>
+<h2>8 - Capturando as fontes usadas em um site</h2>
+    <p>Font Ninjas &gt; extensao do browser </p>
+</main>
+    <a class="botao" href="cap14-aula9-10.html">Próxima Aula</a>
+    <a class="botao" href="cap14-aula5-6.html">Aula Anterior</a>
+  </body>
+</html>

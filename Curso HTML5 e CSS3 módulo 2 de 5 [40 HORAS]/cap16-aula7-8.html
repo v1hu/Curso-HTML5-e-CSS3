@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cap 16 - aula 7/8</title>
+    <link rel="stylesheet" href="cap13-aula7.css" />
+  </head>
+  <body>
+    <main>
+
+      <h2>7 - Sombra nas Caixas </h2>
+    <p class="center"> <b> box-shadow:</b> </p>
+        <p><mark> <b>box-shadow: 1px 1px 1px 1px black; </b></mark> / horizontal (deslocamento para direita e esquerda) / vertical (deslocamento para cima e baixo) / blur(embaçamento/esfumaçado) / spread (espalhamento/alcance)/ cor da sombra  </p>
+        <p><mark> <b>box-shadow: inset 1px 1px 1px 1px black; / borda por dentro, prefixo inset</b></mark></p>
+        <hr>
+              <h2>8 - Caixas com vértices arredondados </h2>
+    <p class="center"> <b> border-radius:</b> </p>
+        <p><mark> <b>border-top-left-radius: 20px; </b></mark> - raio da borda</p>
+        <p><mark> <b>border-top-rigth-radius: 20px; </b></mark> - raio da borda</p>
+        <p><mark> <b>border-bottom-rigth-radius: 20px; </b></mark> - raio da borda</p>
+        <p><mark> <b>border-botoom-left-radius: 20px; </b></mark> - raio da borda</p><p><mark> <b>border-radius: 10px 20px 30px 40px; </b></mark> - raio da borda (shorthand)</p>
+        <p><mark> <b>border-radius: 20px; </b></mark> - raio da borda, todas bordar iguais</p>
+        <p><mark><b>border-radius: 10px 0px; </b></mark> - raio da borda, perpendicular igual, top-left = bottom rigth // top-rigth = bottom-left</p>
+        <p><mark> <b>border-radius: 50px; </b></mark> - bola, pode usar porcerntagem tbm</p>
+        <hr>
+
+          <h2>9 - Bordas decoradas </h2>
+    <p class="center"> <b> box-shadow:</b> </p>
+        <p><mark> <b>border-image-source: url('borda.png'); </b></mark></p>
+        <p><mark> <b>border-image-slice: 20;</b> usar o devtools para configurar</mark></p>
+        <p><mark> <b>border-image-repeat: repeat; </b></mark></p>
+
+        <mark><b>border-image: url('borda.png') 27 repeat;</b></mark> (shorthand)
+        
+        
+
+    
+      <p class="center">
+        <b><u>CSS3:</u></b>
+      </p>
+        <b><u>@charset "UTF-8"</u></b>
+
+        <p><b>body { </b></p>
+        <p><b>font-family:</b> arial;</p>
+        <p><b>background-color:</b> gray;</p>
+        <p><b>margin:</b> 0px;</p>
+      <b>}</b><br /><br />
+
+      <p><b>header {</b></p>
+      <p><b>background-color:</b> white;</p>
+    <p><b>padding:</b> 10px;</p>
+    <p><b>margin:</b> 10px;</p>
+      <b>}</b><br /><br /> 
+
+      <p><b>nav {</b></p>
+      <p><b>background-color:</b> litghgray;</p>
+      <p><b>padding:</b> 3px;</p>
+      <mark> <b>box-shadow: 1px 1px 1px 1px black; </b></mark>
+      <p><b>}</b></p><br /><br /> 
+
+      <p><b>nav &gt; a {</b></p>
+      <p><b>text-decoration:</b> none;</p>
+    <p><b>color:</b> white;</p>
+    <p><b>font-weight:</b> bold;</p>
+    <p><b>margin-right:</b> 30px;</p>
+      <b>}</b><br /><br /> 
+
+    <p><b>nav &gt; a:hover {</b></p>
+      <p><b>text-decoration:</b> underline;</p>
+    <p><b>color:</b> white;</p>
+    <p><b>font-weight:</b> bold;</p>
+      <b>}</b><br /><br /> 
+    
+    
+      <p><b>main {</b></p>
+      <p><b>background-color:</b> white;</p>
+    <p><b>padding:</b> 10px;</p>
+    <p><b>margin:</b> 10px;</p>
+    <mark> <b>border-radius: 20px; </b></mark>
+    <p><b>}</b><br /><br /></p>
+
+            <p><b>article {</b></p>
+      <p><b>background-color:</b> litghgray;</p>
+      <p><b>padding:</b> 5px;</p>
+      <b>}</b><br /><br />
+
+       <p><b>article &gt; aside {</b></p>
+      <p><b>background-color:</b> litghgray;</p>
+      <b>}</b><br /><br />
+
+      <p><b>footer {</b></p>
+      <p><b>background-color:</b> black;</p>
+    <p><b>color:</b> white;</p>
+    <p><b>text-align:</b> center;</p>
+    <p><b>padding:</b> 1px;</p>
+    <p><b>margin:</b> 0px;</p>
+      <b>}</b><br /><br />
+      <p><b>footer &gt; p {</b></p>
+    <b>margin:</b> 0px;
+    <p>}</p><br>
+
+          <p><b>div#bola {</b></p>
+    <p><b>height:</b> 100px;</p>
+    <p><b>width:</b> 100px;</p>
+    <p><b>margin:</b> 0px;</p>
+    <p><b>background-color:</b> white;</p>
+    <p><b>border-radius:</b> 50%;</p>
+      <b>}</b><br>
+
+    <p><b>.borda-personalizada {</b></p>
+    <p><b>border-botoom-left-radius:</b> 100px;</p>
+    <p><b>width:</b> 12px;</p>
+    <p><b>padding:</b> 10px;</p>
+    <p><b><mark>border-image-source: url('borda.png');</mark></b></p>
+    <p><b><mark>border-image-slice: 27;</mark></b></p>
+    <p><b><mark>border-image-repeat:repeat;</mark></b></p><br>
+<hr />    
+
+      <a class="botao" href="cap16-aula5-6(2).html">EXEMPLO DESSA AULA</a>
+<hr />
+      </main>
+      <a class="botao" href="cap17-aula1-2-3-des.html">Próxima Aula</a>
+      <a class="botao" href="cap16-aula5-6.html">Aula Anterior</a>
+  </body>
+</html>

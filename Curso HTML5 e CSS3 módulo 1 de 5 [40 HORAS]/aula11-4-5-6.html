@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cap 11 4/5/6 </title>
+</head>
+
+<body>
+    <h1>Vídeos com HTML5</h1>
+    <h2> Formatos de vídeo mais usados (MP4/webm/OGV )
+        <p>inserindo vídeos hospedados localmente, ou seja, hospedado no meu próprio servidor:</p>
+    </h2>
+    <p>TAG (&lt;video&gt; width="500" &lt;/video&gt;)</p>
+    <p>&lt;video&gt; &lt;/video&gt; = tag para colocar vídeo</p>
+    <p>width="500" = ajeitar o tamanho</p>
+    <p>controls = controles do vídeo</p>
+    <p>poster="tumbnail" - adicionar uma imagem de fundo no video</p>
+    <p>video abaixo no formato MP4</p>
+    <p>autoplay = ao entrar no site o vídeo ja começa</p>
+    <p>loop = video roda em loop</p>
+    <p>
+        <video src="midia/mp4-Ex11-720p60.mp4" width="500" controls></video>
+    </p>
+    <p>FORMATO MOV</p>
+    <p>
+        <video src="midia/mp4-Ex11-720p60mov.mov" width="500" controls></video>
+    </p>
+    <p>FORMATO OGV</p>
+    <p>
+        <video src="midia/mp4-Ex11-720p60ogv.ogv" width="500" controls></video>
+    </p>
+    <p>FORMATO MKV</p>
+    <p>
+        <video src="midia/mp4-Ex11-720p60mkv.mkv" width="500" controls></video>
+    </p>
+    <p>FORMATO WEBM</p>
+    <p>
+        <video src="midia/mp4-Ex11-720p60webm.webm" width="500" controls></video>
+    </p>
+    <p>O video abaixo foi feito um esquema de codigos com varios tipos de arquivo para usar qual o usuario preferir
+        dependendo das suas cofiguraçoes de compatibilidade de acesso (browser):</p>
+    <p>
+        < video width="500" poster="tumbnail" controls autoplay loop>
+            <p>
+                < source src="midia/mp4-Ex11-720p60ogv.ogv" type="video/ogg"> PRIMEIRO A SER TESTADO
+            </p>
+            <p>
+                < source src="midia/mp4-Ex11-720p60mkv.mkv" type="video/x-matroska"> SEGUNDO TEST
+            </p>
+            <p>
+                < source src="midia/mp4-Ex11-720p60mov.mov" type="video/quicktime"> TERCEIRO TEST
+            </p>
+            <p>
+                < source src="midia/mp4-Ex11-720p60webm.webm" type="video/webm"> QUARTO TEST
+            </p>
+            <p>
+                < source src="midia/mp4-Ex11-720p60.mp4" type="video/mp4"> QUINTO TEST
+            </p>
+            < / video>
+    </p>
+
+    <p>
+        <video width="500" poster="imagens/thumbnail.png" controls autoplay loop>
+            <source src="midia/mp4-Ex11-720p60ogv.ogv" type="video/ogg">
+            <source src="midia/mp4-Ex11-720p60mkv.mkv" type="video/x-matroska">
+            <source src="midia/mp4-Ex11-720p60mov.mov" type="video/quicktime">
+            <source src="midia/mp4-Ex11-720p60webm.webm" type="video/webm">
+            <source src="midia/mp4-Ex11-720p60.mp4" type="video/mp4">
+        </video>
+    </p>
+    <h2>
+        no modo acima vc tem uma grande compatibilidade, o problema é que o cliente gasta muita banda a cada acesso, a
+        HOSPEDAGEM EXTERNA é a soluçao:
+    </h2>
+    <p>Colocando um video do youtube</p>
+    <p>
+        <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/M7lc1UVf-VE"
+                title="YouTube video player"
+                autoplay
+                allowfullscreen
+                frameborder="0">
+        </iframe>
+    </p>
+    <p>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <!-- Primeiro Vídeo -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M7lc1UVf-VE" title="YouTube video player 1" allowfullscreen frameborder="0">
+    </iframe>
+
+    <!-- Segundo Vídeo (o mesmo, ou outro) -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M7lc1UVf-VE" title="YouTube video player 2" allowfullscreen frameborder="0">
+    </iframe>
+</div>
+    </p>
+    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+    
+    <!-- O segredo está em usar max-width: 100% e height: auto -->
+    <img src="sua-imagem-1.jpg" alt="Imagem 1" style="width: 100%; max-width: 300px; height: auto;">
+    <img src="sua-imagem-2.jpg" alt="Imagem 2" style="width: 100%; max-width: 300px; height: auto;">
+    <img src="sua-imagem-3.jpg" alt="Imagem 3" style="width: 100%; max-width: 300px; height: auto;">
+    <img src="sua-imagem-4.jpg" alt="Imagem 4" style="width: 100%; max-width: 300px; height: auto;">
+    <img src="sua-imagem-5.jpg" alt="Imagem 5" style="width: 100%; max-width: 300px; height: auto;">
+    <img src="sua-imagem-6.jpg" alt="Imagem 6" style="width: 100%; max-width: 300px; height: auto;">
+
+</div>
+<p>
+    <img src="mapa01.png" alt="Parte 1">
+    <img src="mapa02.png" alt="Parte 2">
+    <img src="mapa03.png" alt="Parte 3"><br>
+    <img src="mapa04.png" alt="Parte 4">
+    <img src="mapa05.png" alt="Parte 5">
+    <img src="mapa06.png" alt="Parte 6">
+</p>
+    <h3><a href="aula12-1.html">Proxima aula</a> Capítulo 12 Aula 1 – Estilos CSS inline </h3>
+    <h3><a href="aula11-1-2-3.html">Aula anterior</a> Cap 11 Aula 1/2/3 </h3>
+</body>
+
+</html>

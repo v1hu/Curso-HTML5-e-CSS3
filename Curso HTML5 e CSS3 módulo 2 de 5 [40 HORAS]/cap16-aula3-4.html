@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cap 16 - aula 3/4</title>
+    <link rel="stylesheet" href="cap13-aula7.css" />
+  </head>
+  <body>
+    <main>
+
+      <h2>3 - Modelo de Caixas na prática (Pt.2)</h2>
+    <p class="center"> <b> ANATOMIA DE UMA CAIXA:</b> </p>
+        <p><mark> <b>heigHT</b> = altura </mark></p>
+        <p><mark> <b>widTH</b> = largura/espessura </mark></p>
+        <p><mark> <b>border</b> = borda </mark></p>
+        <p><mark> <b>padding</b> = acolchoamento, preenchimento é a separaçao borda da caixa para dentro</mark></p>
+        <p><mark> <b>margin</b> = margem é a separaçao externa da borda da caixa para fora </mark></p>
+        <p><mark> <b>outline</b> = contorno ou traçado fora do elemento entre a borda e margin, só que dentro da margin </mark></p> 
+        <p><mark> <b>display:inline;</b> = para transformar block em inline, usar o display inline(n consegue configurar altura e largura) </mark></p>
+        <p><mark> <b>display:block;</b> = para transformar inline em block, usar o display block (n consegue configurar altura e largura) </mark></p>
+        <p><mark> <b>display:inline-block;</b> = continua sendo inline, mas configura altura e largura </mark></p>
+        <br><br>
+
+        <p><mark class="red"> <b>ORDEM</b> = SEMPRE COMEÇAO A ORDEM NO SENTIDO DO RELÓGIO: </mark></p>
+        <p><mark class="red"> <b>TOP - RIGHT - BOTTOM - LEFT</b> </mark></p>
+        <p><mark class="red"> <b>margin: auto;</b> centraliza o conteudo independente do tamanho da tela </mark></p>
+     
+    <p class="center">
+        <b><u>HTML:</u></b>
+      </p>
+      <b>
+        &lt;head&gt;
+        <p>&lt;body&gt;</p>
+      </b>
+      <p><b>&lt;h1&gt; </b>Exemplo de caixa box-level <b>&lt;/h1&gt;</b></p>
+      <p><b>&lt;p&gt; </b>Parágrafos também sao exemplos de box-level, mas os<b> &lt;a href="#"&gt; links  sao exemplos de caixas inline-level &lt;/a&gt;</b><b>&lt;/p&gt;</b> </p>
+      <p><b>&lt;/body&gt;</b></p>
+      <p><b>&lt;/head&gt;</b></p><br>
+
+      <p>
+        Usando a tag <b>&lt;link&gt; rel="stylesheet" href="style.css"</b> para
+        acessar os estilos externos:
+      </p>
+      <p class="center">
+        <b><u>CSS3:</u></b>
+      </p>
+      <b>
+        &lt;head&gt;
+        <p>&lt;body&gt;</p>
+      </b>
+      <p><b>&lt;h1&gt; </b> <h1 class="box-level2">Exemplo de caixa box-level</h1> <b>&lt;/h1&gt;</b></p>
+      <p><b>&lt;p&gt; </b> Parágrafos sao exemplos de box-level, mas os (<b> &lt;a href="#"&gt;links  sao exemplos de caixas inline-level &lt;/a&gt;</b>) <b>&lt;/p&gt;</b> </p> <br>
+      
+      <p><b>&lt;p&gt;</b><a class="inline-level2" href="#">links  sao exemplos de caixas inline-level</a><b>&lt;/p&gt;</b></p><br>
+      <p><b>&lt;/body&gt;</b></p>
+      <p><b>&lt;/head&gt;</b></p><br>
+      <p>
+        <b><u>@charset "UTF-8"</u></b>
+      </p>
+      <p><b>(exemplo box-level)</b></p>
+      <b>h1 { </b>
+      <p><b>background-color:</b> blue;</p>
+      <p><b>height:</b> 300px; (*ALTURA*)</p>
+      <p><b>width:</b> 300px; (*LARGURA*)</p><br>
+      <p><b>border-width:</b> 10px; (*LARGURA DA BORDA*)</p>
+      <p><b>border-style:</b> solid;</p>
+      <p><b>border-color:</b> blue; (*COR DA BORDA*)</p><br>
+
+      <p><b>padding-top:</b> 10px; (acolchoamento superior (TOP))</p>
+      <p><b>padding-right:</b> 10px; (acolchoamento direita (right))</p>
+      <p><b>padding-bottom:</b> 10px; (acolchoamento inferior (bottom))</p>
+      <p><b>padding-left:</b> 10px; (acolchoamento esquerda (left))</p> <br>
+      
+      <p><b>margin-top:</b> 10px; (margem superior (TOP))</p>
+      <p><b>margin-right:</b> 10px; (margem direita (right))</p>
+      <p><b>margin-bottom:</b> 10px; (margem inferior (bottom))</p>
+      <p><b>margin-left:</b> 10px; (margem esquerda (left))</p><br>
+
+      <p><b>outline-width:</b> 5px; (largura do outline)</p>
+      <p><b>outline-style:</b> dashed; (trecejado)</p>
+      <p><b>outline-color:</b> black; (cor do tracejado)</p>
+      
+
+      <b>}</b><br /><br />
+      <p><p><b>(exemplo inline-level)</b></p></p>
+      <b>a {</b>
+      <p><b>border-width:</b> 10px; (*LARGURA DA BORDA*)</p>
+      <p><b>border-style:</b> dashed; (OUTROS TIPOS: <b>dashed</b>(pontilhado), <b>dotted</b>(pontilhado de bolinha), <b>double</b>(linha dupla), <b>solid</b>(linha continua), <b>groove</b>(margem 3d))</p>
+      <p><b>border-color:</b> blue; (*COR DA BORDA*)</p><br>
+      <p><b>padding-top:</b> 10px; (acolchoamento superior (TOP))</p>
+      <p><b>padding-right:</b> 10px; (acolchoamento direita (right))</p>
+      <p><b>padding-bottom:</b> 10px; (acolchoamento inferior (bottom))</p>
+      <p><b>padding-left:</b> 10px; (acolchoamento esquerda (left))</p><br>
+
+      <p><b>margin-top:</b> 10px; (margem superior (TOP))</p>
+      <p><b>margin-right:</b> 10px; (margem direita (right))</p>
+      <p><b>margin-bottom:</b> 10px; (margem inferior (bottom))</p>
+      <p><b>margin-left:</b> 10px; (margem esquerda (left))</p>
+
+      <b>}</b><br /><br />
+       <hr />
+    <p class="center"> <b> (shorthands) Simplificando códigos CSS3:</b> </p><br>
+
+      <p><b>border:</b> 10px solid blue ; <b>(*SHORTHAND BORDER*)</b></p><br>
+
+      <p><b>padding:</b>10px; <b>(*SHORTHAND PADDING*)</b></p><br>
+      
+      <b>10px 10px 10px 10px, se todos os tamanhos forem iguais igual nesse exemplo, so usar 1x o 10px</b>
+      <p>*** se dois valores forem igual, tipo 10px 20px, ou seja top, e direita, ele vai dar para o bottom o valor de top e o da direita vai ser igual o da esquerda.</p><br>
+
+      <p><b>margin:</b>10px; <b>= (10px 10px 10px 10px;) (*SHORTHAND BORDER*)</b></p><br>
+      
+      <p><b>margin:</b> 20px 20px 40px 20px ; <b>(*SHORTHAND MARGIN*)</b></p><br>
+      <p><b>margin:</b> 20px auto 40px auto ; <b>(*SHORTHAND MARGIN2 - direita e esquerda centralizado*)</b></p><br>
+
+      <p><b>outline:</b> 5px (largura) dashed black ; <b>(*SHORTHAND OUTLINE*)</b></p><br>
+
+      </main>
+      <a class="botao" href="cap16-aula5-6.html">Próxima Aula</a>
+      <a class="botao" href="cap16-aula1-2.html">Aula Anterior</a>
+  </body>
+</html>

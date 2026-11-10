@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cap 16 - aula 1/2</title>
+    <link rel="stylesheet" href="cap13-aula7.css" />
+  </head>
+  <body>
+    <main>
+      <!--TAG MAIN, UMA ESPECIE DE DIV ESPECIAL, QUE DIZ QUE É ONDE ESTÁ O CONTEUDO PRINCIPAL   -->
+      <h1>Capítulo 16 Aula 01/02</h1>
+
+      <h2>1 - Modelo de Caixas: Primeiros passos</h2>
+       <p class="center">
+        <b> ANATOMIA DE UMA CAIXA:</b>
+      </p>
+        <p><mark> <b>heigHT</b> = altura </mark></p>
+        <p><mark> <b>widTH</b> = largura </mark></p>
+        <p><mark> <b>border</b> = borda </mark></p>
+        <p><mark> <b>padding</b> = acolchoamento, preenchimento é a separaçao borda da caixa para dentro</mark></p>
+        <p><mark> <b>margin</b> = margem é a separaçao externa da borda da caixa para fora </mark></p>
+        <p><mark> <b>outline</b> = contorno ou traçado fora do elemento entre o padding e margin </mark></p>
+      <p class="center">
+        <b>TIPOS DE CAIXA: <u>box-level</u> / <u>inline-level</u> </b>
+      </p>
+      <p><mark> <b>BOX-LEVEL</b> = Sempre se inicia em uma <b>NOVA LINHA/LINHA DE BAIXO, SEMPRE</b> ocupa a <b>LARGURA TOTAL</b> da tela, depois pula para a <b>NOVA LINHA/LINHA DE BAIXO</b> e continua o conteúdo.<b> (ISOLADO / INDEPENDENTE)</b> </mark></p>
+      <p>
+        <ul>
+          <li>
+            &lt;div&gt; - usado quando se quer quebrar uma linha,criar um box que ocupe a largura inteira e continuar.
+          </li>
+          <li>
+            &lt;h1&gt; &lt;h6&gt;
+          </li>
+          <li>
+            &lt;p&gt; 
+          </li>
+          <li>
+            &lt;main&gt;
+          </li>
+          <li>
+            &lt;header&gt; 
+          </li>
+           <li>
+            &lt;nav&gt; 
+          </li>
+           <li>
+            &lt;article&gt; 
+          </li>
+           <li>
+            &lt;aside&gt; 
+          </li>
+           <li>
+            &lt;footer&gt; 
+          </li>
+          <li>
+            &lt;form&gt; 
+          </li>
+          <li>
+            &lt;video&gt; 
+          </li>
+        </ul>
+      </p>
+      <hr>
+      <p><mark> <b>INLINE-LEVEL</b> = Pula para o <b>LADO</b>, desenha a caixa <b>EXATAMENTE DO TAMNHO DO CONTEUDO, NÃO</b> ocupa a <b>LARGURA TOTAL</b>, depois de terminar, nao quebra a linha, continua do <b>LADO</b>.  </mark></p>
+      <p>
+        <ul>
+          <li>
+            &lt;span&gt; (expansao de código) - quando eu quero um elemento ou uma caixa esteja logo ao lado da outra e nao ocupe a tela inteira.
+          </li>
+          <li>
+            &lt;a&gt;
+          </li>
+          <li>
+            &lt;code&gt; 
+          </li>
+          <li>
+            &lt;small&gt;
+          </li>
+          <li>
+            &lt;strong&gt; 
+          </li>
+           <li>
+            &lt;en&gt; 
+          </li>
+           <li>
+            &lt;sup&gt; - &lt;sub&gt;
+          </li>
+           <li>
+            &lt;label&gt; 
+          </li>
+           <li>
+            &lt;button&gt; 
+          </li>
+          <li>
+            &lt;input&gt; 
+          </li>
+          <li>
+            &lt;select&gt; 
+          </li>
+        </ul>
+      </p>
+
+      <h2>2 - Modelo de Caixas na prática (pt.1)</h2>
+            <p class="center">
+        <b><u>HTML5:</u></b>
+      </p>
+      <b>
+        &lt;head&gt;
+        <p>&lt;body&gt;</p>
+      </b>
+      <p><b>&lt;h1&gt; </b>Exemplo de caixa box-level <b>&lt;/h1&gt;</b></p>
+      <p><b>&lt;p&gt; </b>Parágrafos também sao exemplos de box-level, mas os<b> &lt;a href="#"&gt; links  sao exemplos de caixas inline-level &lt;/a&gt;</b><b>&lt;/p&gt;</b> </p>
+      <p><b>&lt;/body&gt;</b></p>
+      <p><b>&lt;/head&gt;</b></p><br>
+
+      <p>
+        Usando a tag <b>&lt;link&gt; rel="stylesheet" href="style.css"</b> para
+        acessar os estilos externos:
+      </p>
+      <p class="center">
+        <b><u>CSS3:</u></b>
+      </p>
+      <b>
+        &lt;head&gt;
+        <p>&lt;body&gt;</p>
+      </b>
+      <p><b>&lt;h1&gt; </b> <h1 class="box-level">Exemplo de caixa box-level</h1> <b>&lt;/h1&gt;</b></p>
+      <p><b>&lt;p&gt; </b> Parágrafos sao exemplos de box-level, mas os (<b> &lt;a href="#"&gt;links  sao exemplos de caixas inline-level &lt;/a&gt;</b>) <b>&lt;/p&gt;</b> </p> <br>
+      
+      <p><b>&lt;p&gt;</b><a class="inline-level" href="#">links  sao exemplos de caixas inline-level</a><b>&lt;/p&gt;</b></p><br>
+      <p><b>&lt;/body&gt;</b></p>
+      <p><b>&lt;/head&gt;</b></p><br>
+      <p>
+        <b><u>@charset "UTF-8"</u></b>
+      </p>
+
+      <b>h1 {</b>
+      <p><b>background-color:</b> blue;</p>
+      <p><b>height:</b> 300px; (*ALTURA*)</p>
+      <p><b>width:</b> 300px; (*LARGURA*)</p>
+      <p><b>border-width:</b> 10px; (*LARGURA DA BORDA*)</p>
+      <p><b>border-style:</b> solid;</p>
+      <p><b>border-color:</b> blue; (*COR DA BORDA*)</p><br>
+
+      <p><b>padding-top:</b> 10px; (acolchoamento superior (TOP))</p>
+      <p><b>padding-right:</b> 10px; (acolchoamento direita (right))</p>
+      <p><b>padding-bottom:</b> 10px; (acolchoamento inferior (bottom))</p>
+      <p><b>padding-left:</b> 10px; (acolchoamento esquerda (left))</p>
+
+      <b>}</b><br /><br />
+      <b>a {</b>
+      <p><b>border-width:</b> 10px; (*LARGURA DA BORDA*)</p>
+      <p><b>border-style:</b> dashed; (OUTROS TIPOS: <b>dashed</b>(pontilhado), <b>dotted</b>(pontilhado de bolinha), <b>double</b>(linha dupla), <b>solid</b>(linha continua), <b>groove</b>(margem 3d))</p>
+      <p><b>border-color:</b> blue; (*COR DA BORDA*)</p>
+      <p><b>padding-top:</b> 10px; (acolchoamento superior (TOP))</p>
+      <p><b>padding-right:</b> 10px; (acolchoamento direita (right))</p>
+      <p><b>padding-bottom:</b> 10px; (acolchoamento inferior (bottom))</p>
+      <p><b>padding-left:</b> 10px; (acolchoamento esquerda (left))</p>
+
+      <b>}</b><br /><br />
+       <hr />
+      </main>
+      <a class="botao" href="cap16-aula3-4.html">Próxima Aula</a>
+      <a class="botao" href="cap15-aula3-4.html">Aula Anterior</a>
+  </body>
+</html>

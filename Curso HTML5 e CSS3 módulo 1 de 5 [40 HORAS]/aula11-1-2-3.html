@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 11 Aula 1/2/3</title>
+</head>
+<body>
+    <h1>Capítulo 11 Aula 1 – Imagens Dinâmicas</h1>
+    <h2>Mídias em HTML5 </h2>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador </p>
+    <p>tags usadas <code>(&lt;picture&gt; &lt;img src="imagens/foto-G-ex11.png" alt="imagem flexível" &lt;/picture&gt;)</code> </p>
+    <p>dentro de <code>(<picture> </picture>)</code> entra a tag (< source > media="(min-width:1050px)" srcset="imagens/foto-M-ex11.png" type="imagens/png") - os valores de width podem ser , min ou max-width.</p>
+    <p>< picture>
+        < source media="(max-width: 1000px)" srcset="imagens/foto-M-ex11.png" type="image/png">
+        <p>
+                ("<code>
+                    < img src="imagens/foto-G-ex11.png" alt="imagem flexível">
+                        </ picture>
+                </code>")
+        </p>LARGURA = max-width:1050px, por padrao vai carregar, mas se seu navegador tiver menos de 1000px, mobiles etc, o tamanho max sendo 1050px, o sistema vai carregar o parametro source set > srcset="imagens/foto-M-ex11.png, com type="image/png", sempre seguir a sequencia, dentro da tag picture de baixo para cima, a imagem original, acima soucer media type dos tamanhos menores, resultado completo abaixo :  </p>
+        <p></p>
+        <p>
+            < picture>
+        < source media="(max-width: 750px )" srcset="imagens/foto-p-ex11.png" type="image/png">
+        < source media="(max-width: 1050px)" srcset="imagens/foto-M-ex11.png" type="image/png">
+        < img src="imagens/foto-G-ex11.png" alt="imagem flexível">
+    < /picture>
+        </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p-ex11.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-M-ex11.png" type="image/png">
+        <img src="imagens/foto-G-ex11.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo aúdios em HTML5</h1>
+    <h2>MP3</h2>
+    <p>< audio src="MP3" controls > < /audio>  = MP3, wv, ogg - versao meio limitada, , (controls) mostra os controles no site exemplo abaixo</p>
+        <audio src="imagens/audio-ex11.mp3" controls > </audio>
+        <p> modo 2 - < audio preload="auto" autoplay controls> 
+            < source src="imagens/audio-ex11.mp3" type="audio/mpeg">
+        < /audio > // o (autoplay) faz da play ao entrar, (preload="auto") faz o site carregar o audio todo mesmo ante de tocar, se tiver 'none', vai carregar so após o play </p>
+        <audio preload="auto" autoplay controls> <source src="imagens/audio-ex11.mp3" type="audio/mpeg"> </audio>
+    
+    <h3><a href="aula11-4-5-6.html">Proxima aula</a> Cap 11 Aula 4/5/6 </h3>
+    
+</body>
+</html>

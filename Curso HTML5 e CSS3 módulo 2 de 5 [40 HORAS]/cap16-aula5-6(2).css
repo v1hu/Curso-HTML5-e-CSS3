@@ -1,0 +1,128 @@
+body {
+
+font-family: arial;
+
+background-color: rgb(160, 157, 157);
+
+margin: 0px;
+
+}
+
+
+header {
+
+background-color: rgba(255, 255, 255, 0.685);
+
+padding: 10px;
+
+margin: 10px;
+
+}
+
+
+nav {
+
+background-color: rgb(194, 194, 194);
+
+padding: 3px;
+
+box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.322);
+
+}
+
+
+nav > a {
+
+text-decoration: none;
+
+color: rgb(209, 38, 38);
+
+font-weight: bold;
+
+margin-right: 30px;
+
+}
+
+
+nav > a:hover {
+
+text-decoration: underline;
+
+color: rgba(7, 81, 240, 0.555);
+
+font-weight: bold;
+
+}
+
+
+main {
+
+background-color: rgba(255, 255, 255, 0.61);
+
+border-radius: 10px 0px;
+
+box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.322);
+
+padding: 10px;
+
+margin: 10px;
+
+}
+
+
+article {
+
+background-color: red;
+
+padding: 5px;
+
+}
+
+
+article > aside {
+
+background-color: rgb(100, 99, 99);
+
+}
+
+
+footer {
+
+background-color: black;
+
+color: white;
+
+text-align: center;
+
+padding: 4px;
+
+margin: 0px;
+
+}
+
+footer > p{
+
+margin: 0px;
+
+}
+
+div#bola{
+
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.borda-personalizada{
+
+    border: 12px solid black;
+    padding: 10px;
+    border-image-source: url('borda.png');
+    border-image-slice: 27;
+    border-image-repeat: repeat;
+
+
+
+}

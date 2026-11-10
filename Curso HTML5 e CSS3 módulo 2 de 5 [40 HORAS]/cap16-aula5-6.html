@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cap 16 - aula 5/6</title>
+    <link rel="stylesheet" href="cap13-aula7.css" />
+  </head>
+  <body>
+    <main>
+
+      <h2>5 - Grouping Tags em HTML5 (tags de agrupamento)</h2>
+    <p class="center"> <b> tag de agrupamentos básicas:</b> </p>
+        <p><mark> <b>&lt;div&gt; &lt;/div&gt;</b> = caixa do tipo box-level </mark></p>
+        <p><mark> <b>&lt;span&gt; &lt;/span&gt;</b> = caixa do tipo inline-level </mark></p>
+        <hr>
+        <p class="center"> <b> tag de agrupamentos SEMANTICAS:</b> </p>
+        <p><mark> <b>&lt;header&gt; &lt;/header&gt;</b> = cabeçalho </mark></p>
+        <p><mark> <b>&lt;main&gt; &lt;/main&gt;</b> = conteudo principal</mark></p>
+        <p><mark> <b>&lt;footer&gt; &lt;/footer&gt;</b> = rodapé</mark></p>
+        <p><mark> <b>&lt;section&gt; &lt;/section&gt;</b> = seçao</mark></p>
+        <p><mark> <b>&lt;article&gt; &lt;/article&gt;</b> = artigo</mark></p>
+        <p><mark> <b>&lt;aside&gt; &lt;/aside&gt;</b> = conteudo periferico ao artigo, relativo ao artigo </mark></p>
+        <p><mark> <b>&lt;nav&gt; &lt;/nav&gt;</b> = menu de navegaçao</mark></p>
+    
+     
+    <p class="center">
+        <b><u>HTML:</u></b>
+      </p>
+      <b>
+        &lt;head&gt;
+        <p>&lt;body&gt;</p>
+      </b><br>
+     
+      <b>&lt;header&gt;</b>
+      <p><b>&lt;h1&gt; </b>Meu site <b>&lt;/h1&gt;</b></p><br>
+      
+      <p><b>&lt;/nav&gt;</b> (menu de links)</p>
+      <p>&lt;a href="#"&gt;LINK&lt;&lt;/a&gt;</p>
+      <p>&lt;a href="#"&gt;LINK&lt;&lt;/a&gt;</p>
+      <p><b>&lt;/nav&gt;</b></p><br>
+      
+      <b>&lt;header&gt;</b><br><br>
+
+    <p><b>&lt;main&gt;</b> <br><br></p>
+
+    <p><b>&lt;section id="noticias"&gt;</b></p>
+    <p><p><b>&lt;article&gt;</b></p></p>
+    
+    <p><b>&lt;h2&gt;</b>TITULO DO ARTIGO<b>&lt;h2&gt;</b></p>
+    
+    <p><b>&lt;p&gt;</b>assunto do artigo<b>&lt;p&gt;</b></p>
+    
+    <p><b>&lt;aside&gt;</b></p>
+    <p><b>&lt;p&gt;</b>artigo escrito por fulano<b>&lt;p&gt;</b></p>
+    <p><b>&lt;/aside&gt;</b></p><br>
+    
+    <p><b>&lt;/article&gt;</b></p><br>
+    
+    <p><p><b>&lt;/section&gt;</b></p><br>
+    
+    <b>&lt;/main&gt;</b> </p><br>
+
+      <p><b>&lt;footer&gt;</b></p>  &lt;p&gt; desenvolvido por fulano &lt;/p&gt;
+      <p><b>&lt;/footer&gt;</b></p><br>
+
+      <p><b>&lt;/body&gt;</b></p>
+      <p><b>&lt;/head&gt;</b></p><br>
+
+      <p>
+        Usando a tag <b>&lt;link&gt; rel="stylesheet" href="style.css"</b> para
+        acessar os estilos externos:
+      </p>
+      <p class="center">
+        <b><u>CSS3:</u></b>
+      </p>
+        <b><u>@charset "UTF-8"</u></b>
+
+        <p><b>body { </b></p>
+        <p><b>font-family:</b> arial;</p>
+        <p><b>background-color:</b> gray;</p>
+        <p><b>margin:</b> 0px;</p>
+      <b>}</b><br /><br />
+
+      <p><b>header {</b></p>
+      <p><b>background-color:</b> white;</p>
+    <p><b>padding:</b> 10px;</p>
+    <p><b>margin:</b> 10px;</p>
+      <b>}</b><br /><br /> 
+
+      <p><b>nav {</b></p>
+      <p><b>background-color:</b> litghgray;</p>
+    <p><b>padding:</b> 3px;</p>
+      <b>}</b><br /><br /> 
+
+      <p><b>nav &gt; a {</b></p>
+      <p><b>text-decoration:</b> none;</p>
+    <p><b>color:</b> white;</p>
+    <p><b>font-weight:</b> bold;</p>
+    <p><b>margin-right:</b> 30px;</p>
+      <b>}</b><br /><br /> 
+
+    <p><b>nav &gt; a:hover {</b></p>
+      <p><b>text-decoration:</b> underline;</p>
+    <p><b>color:</b> white;</p>
+    <p><b>font-weight:</b> bold;</p>
+      <b>}</b><br /><br /> 
+    
+    
+      <p><b>main {</b></p>
+      <p><b>background-color:</b> white;</p>
+    <p><b>padding:</b> 10px;</p>
+    <p><b>margin:</b> 10px;</p>
+      <b>}</b><br /><br />
+
+            <p><b>article {</b></p>
+      <p><b>background-color:</b> litghgray;</p>
+      <p><b>padding:</b> 5px;</p>
+      <b>}</b><br /><br />
+
+       <p><b>article &gt; aside {</b></p>
+      <p><b>background-color:</b> litghgray;</p>
+      <b>}</b><br /><br />
+
+      <p><b>footer {</b></p>
+      <p><b>background-color:</b> black;</p>
+    <p><b>color:</b> white;</p>
+    <p><b>text-align:</b> center;</p>
+    <p><b>padding:</b> 1px;</p>
+    <p><b>margin:</b> 0px;</p>
+      <b>}</b><br /><br />
+      <a class="botao" href="cap16-aula5-6(2).html">EXEMPLO DESSA AULA</a>
+<hr />
+      </main>
+      <a class="botao" href="cap16-aula7-8.html">Próxima Aula</a>
+      <a class="botao" href="cap16-aula3-4.html">Aula Anterior</a>
+  </body>
+</html>

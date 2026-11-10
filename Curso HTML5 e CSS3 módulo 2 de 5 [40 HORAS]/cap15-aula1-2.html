@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cap 15 - aula 1/2</title>
+    <link rel="stylesheet" href="cap13-aula7.css" />
+  </head>
+  <body>
+    <main>
+      <!--TAG MAIN, UMA ESPECIE DE DIV ESPECIAL, QUE DIZ QUE É ONDE ESTÁ O CONTEUDO PRINCIPAL   -->
+                                      <h1>Capítulo 15 Aula 01/02</h1>
+
+      <h2>1 - Seletores Personalizados: Usando o id(#) com CSS</h2>
+      <p><b><mark>id(#) = Identificador de Elementos</mark></b></p>
+      <p>Usando a tag <b>&lt;link&gt; rel="stylesheet" href="style.css"</b> para acessar os estilos externos:</p>
+      <p><b><u>HTML5:</u></b> <b>&lt;h1 id="principal"&gt;</b> TITULO PRINCIPAL <b>&lt;/h1&gt;</b></p>
+      <button class="caixa" >
+          <p>HTML5 = <mark><b>Id = #</b></mark> = CSS3</p>
+          <p>HTML5 = <mark><b>class = .</b></mark> = CSS3</p>
+      </button>
+      <p><b><u>CSS3:</u></b></p>
+      <p><b>@<u>charset "UTF-8"</u></b></p>
+
+    <b>body {</b>
+      <ul><b>backgroundcolor:</b> green;</ul>
+      <ul><b>font-family:</b> Arial; </ul>
+    <b>}</b><br><br>
+
+    <b>h1 {</b>
+      <ul><b>backgroundcolor:</b> green2;</ul>
+    <b>}</b><br><br>
+        <b>#principal {</b>
+
+      <ul><b>text-align:</b> center; (identificou o titulo para dar uma caracteristica única, usando a # do Id.) </ul>
+    <b>}</b><br><br>
+
+    <b>h2 {</b>
+      <ul><b>backgroundcolor:</b> green3;</ul>
+    <b>}</b><br><br>
+    <p><b><mark>OBS: Dentro de um doc HTML5 só se pode ter um elemento "Id(#)". /Regra W3C</mark></b></p>
+    
+<hr>
+<h2>2 - As diferenças entre id(#) e class(.)</h2>
+<p><b><mark>class(.) = Classificar os Elementos</mark> (OBS: Nome das classes pela funcionalidade)</b> </p>
+<p><b><mark> &lt;span&gt; &lt;/span&gt; = </mark></b> Com essa tag da para selecionar algo dentro do texto e atribuir a personalizaçao de uma class="", exemplo:</p>
+<p><b><mark>&lt;p&gt; &lt;span class"basico"&gt; <span class="destaque">TEXTO PERSONALIZADO</span> &lt;/span&gt;&lt;/p</mark></b>&gt;</p>
+
+<p>Usando a tag <b>&lt;link&gt; rel="stylesheet" href="style.css"</b> para acessar os estilos externos:</p>
+      <button class="caixa" >
+          <p>HTML5 = <mark><b>Id = #</b></mark> = CSS3</p>
+          <p>HTML5 = <mark><b>class = .</b></mark> = CSS3</p>
+      </button>
+      <hr>
+            <p><b><u>HTML5:</u></b></p>
+      <p><b>&lt;h1 class="basico"&gt;</b> <span class="green">TITULO BASICO</span> <b>&lt;/h1&gt;</b></p>
+      <p><b>&lt;h1 class="intermediario"&gt;</b> <span class="red">TITULO INTERMEDIARIO</span> <b>&lt;/h1&gt;</b></p>
+      <p><b>&lt;h1 class="avancado"&gt;</b> <span class="blue">TITULO AVANÇADO</span> <b>&lt;/h1&gt;</b></p>
+      <p><b>&lt;h1 class="destaque"&gt;</b> <span class="destaque">DESTAQUE</span> <b>&lt;/h1&gt;</b></p><br>
+      <p>Duas classes podem ser usadas juntas ao mesmo tempo nesse caso vai ter um titulo e um fundo em destaque:</p>
+      <p><b>&lt;h1 class="avancado destaque"&gt;</b> <span class="blue destaque">TITULO AVANÇADO COM DESTAQUE</span> <b>&lt;/h1&gt;</b></p><br>
+      <p><b><u>CSS3:</u></b></p>
+      <p><b>@<u>charset "UTF-8"</u></b></p>
+
+    <b>body {</b>
+      <ul><b>color:</b> black;</ul>
+      <ul><b>font-family:</b> Arial; </ul>
+    <b>}</b><br><br>
+
+    <b>h1 {</b>
+      <ul><b>color:</b> black; (CORES DE TITULO PADRAO BASE)</ul>
+    <b>}</b><br><br>
+        <b>.basico {</b>
+    <ul><b>color:</b> <u>green; (CORES DE TITULO DIFERENTES)</u></ul>
+    <b>}</b><br><br>
+
+    <b>.intermediario {</b>
+      <ul><b>color:</b> <u>red; (CORES DE TITULO DIFERENTES)</u></ul>
+    <b>}</b><br><br>
+    <b>.avancado {</b>
+      <ul><b>color:</b> <u>blue; (CORES DE TITULO DIFERENTES)</u></ul>
+    <b>}</b><br><br>
+    <b>.destaque {</b>
+      <ul><b>backgroundcolor:</b> <u>red; (COR DE FUNDO PERSONALIZADO)</u></ul>
+    <b>}</b><br><br>
+
+    <p><b><mark>class:"" = Tambem faz a config personalizada, quando eu quero aplicar a mesma config em varios elementos.</mark></b></p>
+    <hr>
+    </main>
+    
+
+    <a class="botao" href="cap15-aula3-4.html">Próxima Aula</a>
+    <a class="botao" href="cap14-aula9-10.html">Aula Anterior</a>
+  </body>
+</html>
