@@ -40,7 +40,7 @@
 /* corpo */
 body { 
 
-    background-color: var(--cor0); 
+    background-image: url(imagens/wallpaper001.jpg);
     font-family: var(--fonte-padrao);
 
 }
@@ -225,28 +225,11 @@ div.video > iframe {
 aside {
 
     background-color: var(--cor1);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
-
-}
-
-aside > h3 {
-
-    background-color: var(--cor4);
-    color: white;
-    padding: 10px;
-    margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
-    font-family: var(--fonte-padrao);
-
-}
-
-aside > ul {
-
-    list-style-type: '\2714\00A0\00A0';
-    list-style-position: inside;
-    columns: 2;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 50px;
+    margin: 10px auto;
+    max-width: 800px;
 
 }
 
@@ -274,5 +257,55 @@ footer a:hover {
 
     text-decoration: underline;
     color: var(--cor1);
+
+}
+
+
+div.quadrado{
+
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+
+}
+
+div#q1{
+
+    background-color: skyblue;
+
+}
+
+div#q2{
+
+    background-image: linear-gradient(to bottom, yellow, red);
+
+}
+
+div#q3{
+    
+    background-image: url(imagens/pattern003.png);
+
+}
+
+.botao {
+
+    display: block;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    background-image: url(imagens/pattern002.png);
+    text-align: center;
+    text-decoration: none;
+    color: rgb(49, 21, 21);
+    text-shadow: 50px black;
+    font-weight: bolder;
+    margin: 10px auto;
+    padding: 5px;
+    cursor: pointer;
+
+    
 
 }
