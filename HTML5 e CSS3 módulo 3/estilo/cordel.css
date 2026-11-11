@@ -1,73 +1,103 @@
 @charset "UTF-8";
 
-    /* Global config */
-    * {
+         /* Global config */
+         * {
 
-        margin: 0px;
-        padding: 0px;
-
-}
-
-
-    /* Corpo */
-    html, body {
-
-        min-height: 100vh;
-        background-color: darkgray;
+                 margin: 0px;
+                 padding: 0px;
 
 }
 
 
+         /* Corpo */
+         html, body {
 
-    /* Cabeçalho (header) */
-    header {
-
-        background-color: black;
-        color: white;
-        text-align: center;
-
-            }
-
-            /* título (h1) dentro do cabeçalho(header) */
-            header > h1 { 
-
-
-                    padding-top: 50px;
-                    font-variant: small-caps; 
-
-            }
-
-            /* Paragrafo (p) dentro do cabeçalho(header) */
-            header > p {
-
-                    padding-bottom: 50px;
-
-            }
-
-            /* link (a) dentro do cabeçalho e link (a) dentro do footer(rodapé) */
-            header a, footer a {
-
-                    color: white;
-                    text-decoration: none;
-                    font-weight: bolder;
-
-            }
-
-            /* estilo link(a), ao passar o mouse(hover), em cabeçalho(header) e no footer(rodapé) */
-            header a:hover, footer a:hover {
-
-                    text-decoration: underline;
+                 min-height: 100vh;
+                 background-color: darkgray;
 
 }
 
 
 
+         /* Cabeçalho (header) */
+         header {
 
-    footer {
+                 background-color: black;
+                 color: white;
+                 text-align: center;
 
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 10px;
+}
+
+                 /* título (h1) dentro do cabeçalho(header) */
+                 header > h1 { 
+
+ 
+                         padding-top: 50px;
+                         font-variant: small-caps; 
+
+} 
+
+                 /* Paragrafo (p) dentro do cabeçalho(header) */
+                 header > p {
+
+                         padding-bottom: 50px;
+
+}
+
+                 /* link (a) dentro do cabeçalho e link (a) dentro do footer(rodapé) */
+                 header a, footer a {
+
+                         color: white;
+                         text-decoration: none;
+                         font-weight: bolder;
+
+} 
+
+                 /* estilo link(a), ao passar o mouse(hover), em cabeçalho(header) e no footer(rodapé) */
+                 header a:hover, footer a:hover {
+
+                         text-decoration: underline;
+
+}
+
+
+         section {
+
+                 padding-top: 10vh;
+                 padding-bottom: 10vh;
+                 line-height: 2em;
+                 padding-left: 30px;
+
+}
+
+
+                section.normal {
+
+                         background-color:white;
+                         color: black;
+
+        }
+
+                section.imagem {
+
+                         background-color: rgb(51, 51, 51);
+                         color: white;
+
+}
+
+                         section.imagem > p {
+
+                                 width: 400px;
+                                 background-color: rgba(0, 0, 0, 0.253);
+
+}
+
+
+         footer {
+
+                 background-color: black;
+                 color: white;
+                 text-align: center;
+                 padding: 10px;
 
 }
