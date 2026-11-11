@@ -40,7 +40,11 @@
 /* corpo */
 body { 
 
-    background-image: url(imagens/wallpaper001.jpg);
+    font-weight: bolder;
+    color: rgb(10, 10, 10);
+    background-image: url(https://raw.githubusercontent.com/gustavoguanabara/html-css/refs/heads/master/imagens/mascote.png);
+    background-size: 100px;
+    background-repeat: repeat-y;
     font-family: var(--fonte-padrao);
 
 }
@@ -64,7 +68,7 @@ header {
 header > h1 {
 
     
-    color:white;
+    color:rgb(8, 8, 8);
     font-family: var(--fonte-destaque);
     font-size: 3em;
     font-weight: normal;
@@ -119,36 +123,33 @@ nav > a:hover{
 /* Principal */
 main {
 
+    background-image: url(imagens/wallpaper002.jpg);
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(12, 12, 12);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
 }
 
 main h1 {
 
-    color: var(--cor5);
-    font-family: var(--fonte-android);
-    font-weight: normal;
+    color: rgb(29, 252, 9);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
     font-size: 1.8em;
+    text-shadow: 30px rgb(2, 252, 43);
+
 
 }
 
-main h2{
-
-    font-family: var(--fonte-android);
-    color: var(--cor4);
-    font-size: 1.3em;
-    font-weight: normal;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
-    text-indent: 8px;
-
-}
 
 main p {
 
@@ -157,45 +158,6 @@ main p {
     text-indent: 30px;
     font-size: 1em;
     line-height: 2em; /* altura entre linhas */
-
-}
-
-main strong { 
-
-    color: var(--cor4);
-    font-weight: bolder;
-
-}
-
-main a {
-
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--cor5);
-    background-color: var(--cor1);
-    padding: 2px 6px;
-
-}
-
-main a:hover {
-
-    text-decoration: underline;
-    color: var(--cor4);
-
-}
-
-
-main img {
-
-    width: 100%;
-
-}
-
-main img.pequena {
-
-    max-width: 350px;
-    display: block;
-    margin: auto;
 
 }
 
@@ -224,7 +186,8 @@ div.video > iframe {
 /* Conteúdo periférico*/
 aside {
 
-    background-color: var(--cor1);
+    background-position: center top;
+    background-repeat: no-repeat;
     padding: 50px;
     border-radius: 30px;
     box-shadow: 50px;
@@ -308,4 +271,74 @@ div#q3{
 
     
 
+}
+div.bloco {
+
+        background-image: url(imagens/wallpaper003.jpg);
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin:10px;
+
+}
+
+div#qq1 {
+
+    background-position: left top;
+
+}
+
+div#qq2 {
+
+    background-position: left center;
+    
+}
+
+div#qq3 {
+
+    background-position: right bottom;
+}
+
+div#qq4 {
+
+    background-position: center center;
+}
+
+.aula6{
+
+    background: url(imagens/wallpaper003.jpg) center center / cover no-repeat fixed;
+    
+}
+
+#container{
+
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+
+        position: relative;
+        height: 96vh;
+        padding: 10px;
+        background-color: #631283;
+
+}
+
+#conteudo {
+
+    background-image: url(imagens/target001.png);
+    background-size:  100% 100%;
+
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: #fbff04;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.cap20 {
+    background-image: url(imagens/pattern001.png);
 }

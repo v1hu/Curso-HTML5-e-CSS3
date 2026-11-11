@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+    /* Global config */
+    * {
+
+        margin: 0px;
+        padding: 0px;
+
+}
+
+
+    /* Corpo */
+    html, body {
+
+        min-height: 100vh;
+        background-color: darkgray;
+
+}
+
+
+
+    /* Cabeçalho (header) */
+    header {
+
+        background-color: black;
+        color: white;
+        text-align: center;
+
+            }
+
+            /* título (h1) dentro do cabeçalho(header) */
+            header > h1 { 
+
+
+                    padding-top: 50px;
+                    font-variant: small-caps; 
+
+            }
+
+            /* Paragrafo (p) dentro do cabeçalho(header) */
+            header > p {
+
+                    padding-bottom: 50px;
+
+            }
+
+            /* link (a) dentro do cabeçalho e link (a) dentro do footer(rodapé) */
+            header a, footer a {
+
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bolder;
+
+            }
+
+            /* estilo link(a), ao passar o mouse(hover), em cabeçalho(header) e no footer(rodapé) */
+            header a:hover, footer a:hover {
+
+                    text-decoration: underline;
+
+}
+
+
+
+
+    footer {
+
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+
+}
