@@ -44,6 +44,14 @@
 
 }
 
+                caption {
+                    
+                    font-size: 1,5em;
+                    font-weight: bold;
+                    padding: 10px;
+                    background-color: rgba(255, 255, 0, 0.459);
+}
+
                 thead, tfoot {
 
                     background-color: gray;
@@ -137,16 +145,18 @@
 
 <table>
 
+        <caption>População Das Unidades Federativas </caption>
+
 <thead>
 
 
         <tr>
 
-            <th>
+            <th scope="col">
                 Estado
             </th>
 
-            <th>
+            <th scope="col" style="width: 50px;">
                 População
             </th>
 
@@ -199,7 +209,7 @@
     <tfoot>
 
         <tr>
-            <th>
+            <th scope="row">
                 Total de Habitantes
             </th>
 
@@ -220,6 +230,26 @@
                 <mark>Aula 05 – Caption e Escopo de títulos em tabelas</mark>
 
             </h1>
+
+            <aside>
+<hr>  
+                <p>
+                    <mark>&lt;caption&gt;</mark> População Das Unidades Federativas &lt;/caption&gt;
+                </p>
+                <p>
+                    <mark>&lt;td&gt; </mark>sempre que for dado ex(são paulo , 45.919.049) &lt;/td&gt;
+                </p>
+                <p>
+                    <mark>&lt;th&gt;</mark> sempre que for título ex(estado , total de Habitantes, População) &lt;/th&gt;
+                </p>
+                <p>
+                    <mark>&lt;th scope="col" &gt;</mark> titulo de coluna ex(estado, População)  &lt;/th&gt;
+                </p>
+                <p>
+                    <mark>&lt;th scope="row" &gt;</mark> titulo de linha ex(total Habitantes)  &lt;/th&gt;
+                </p>
+<hr>
+            </aside>
 
 </body>
 
