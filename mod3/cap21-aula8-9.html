@@ -131,12 +131,12 @@
 <hr>
 
                                         <p>
-                        &lt; td <mark>colspan="2"</mark> &gt; B &lt;/td&gt; - expansão para B ocupar 2 células / colunas <mark>(vertical)</mark>
+                        &lt; td <mark>colspan="2"</mark> &gt; B &lt;/td&gt; - expansão horizontal / Lateral, B ocupa duas colunas horizontal <mark>(horizontal)</mark>
                     </p>
                 
 
                     <p>
-                        &lt; td <mark>rowspan="3"</mark> &gt; F &lt;/td&gt; - expansão para D ocupar 3 linhas <mark>(horizontal)</mark>
+                        &lt; td <mark>rowspan="3"</mark> &gt; F &lt;/td&gt; - expansão vertical D ocupa 3 linhas verticalmente <mark>(vertical)</mark>
                     </p>
 
 
@@ -210,12 +210,39 @@
 
             </h1>
 
-            <aside>
-<hr>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                </tr>
 
-                
-<hr>
-            </aside>    
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+
+                </tr>
+
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+
+            </table>
 
 </body>
 
